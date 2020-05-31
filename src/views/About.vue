@@ -108,7 +108,7 @@ export default {
   methods: {},
   created() {
     axios
-      .get(`http://www.omdbapi.com/?i=${this.movie.imdbID}&apikey=eef831d1`)
+      .get(`https://www.omdbapi.com/?i=${this.movie.imdbID}&apikey=eef831d1`)
       .then(result => {
         this.movie = result.data;
       });
